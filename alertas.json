@@ -1,0 +1,26 @@
+[
+  {
+    "id": "a1",
+    "titulo": "Lluvia ligera",
+    "mensaje": "Lluvia ligera, precaución al viajar",
+    "tiempo_pct": 10,
+    "costo_extra": 0,
+    "targets": ["Distrito Nacional", "Santiago"]
+  },
+  {
+    "id": "a2",
+    "titulo": "Hora pico",
+    "mensaje": "Hora pico: posible aumento de tiempo",
+    "tiempo_pct": 20,
+    "costo_extra": 0,
+    "targets": ["all"]
+  },
+  {
+    "id": "a3",
+    "titulo": "Paro de transporte",
+    "mensaje": "Paro local: riesgo de retrasos y aumento de costo",
+    "tiempo_pct": 50,
+    "costo_extra": 50,
+    "targets": ["Barahona"]
+  }
+]

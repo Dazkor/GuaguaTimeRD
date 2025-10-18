@@ -1,0 +1,236 @@
+/* ===============================
+   VARIABLES GLOBALES
+==================================*/
+:root {
+  --color-primario: #16dd12;
+  --color-secundario: #f5f5f5;
+  --color-texto: #333;
+  --color-fondo: #ffffff;
+  --color-borde: #dddddd;
+  --color-acento: #ffd700;
+
+  --fuente-principal: 'Segoe UI', Arial, sans-serif;
+
+  --espaciado: 1rem;
+  --radio: 8px;
+  --sombra: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ===============================
+    ESTILOS BÁSICOS
+==================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  color: var(--color-texto);
+  background-color: var(--color-secundario);
+  line-height: 1.6;
+}
+
+
+h2{
+    color: var(--color-primario)
+}
+
+/* ===============================
+   HEADER
+==================================*/
+header {
+  background: var(--color-primario);
+  text-align: center;
+  padding: 1.5rem;
+  
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: var(--color-secundario);
+
+}
+
+/* ===============================
+   SECCIÓN DE RUTAS
+==================================*/
+#seleccion-ruta {
+  background: var(--color-fondo);
+  padding: var(--espaciado);
+  margin: var(--espaciado);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+}
+
+#ruta-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+#ruta-form label {
+  font-weight: bold;
+}
+
+#ruta-form input {
+  padding: 0.6rem;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+}
+
+#ruta-form button {
+  background: var(--color-primario);
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: var(--radio);
+  cursor: pointer;
+  
+}
+
+#ruta-form button:hover {
+  background: #0056b3;
+}
+
+/* ===============================
+   RUTAS DISPONIBLES
+==================================*/
+#resultados-rutas {
+  background: var(--color-fondo);
+  margin: var(--espaciado);
+  padding: var(--espaciado);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+}
+
+#rutas-container ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--espaciado);
+  margin-top: 1rem;
+}
+
+#rutas-container li {
+  background: var(--color-secundario);
+  padding: 0.8rem;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  transition: transform 0.2s;
+}
+
+#rutas-container li:hover {
+  transform: translateY(-3px);
+}
+
+/* ===============================
+   COMPARADOR DE RUTAS
+==================================*/
+#comparador {
+  background: var(--color-fondo);
+  margin: var(--espaciado);
+  padding: var(--espaciado);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  overflow-x: auto;
+}
+
+#comparador table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#comparador th {
+  background: var(--color-primario);
+  color: white;
+}
+
+#comparador th, #comparador td {
+  border: 1px solid var(--color-borde);
+  padding: 0.6rem;
+  text-align: center;
+}
+
+/* ===============================
+   RUTAS FAVORITAS
+==================================*/
+#favoritas {
+  background: var(--color-fondo);
+  margin: var(--espaciado);
+  padding: var(--espaciado);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+}
+
+#lista-favoritas {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaciado);
+}
+
+#lista-favoritas li {
+  background: var(--color-acento);
+  color: #000;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radio);
+  font-weight: 600;
+}
+
+/* ===============================
+   ALERTAS
+==================================*/
+#alertas {
+  background: var(--color-fondo);
+  margin: var(--espaciado);
+  padding: var(--espaciado);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+}
+
+#alertas-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#alertas-container li {
+  background: var(--color-secundario);
+  border-left: 5px solid var(--color-primario);
+  padding: 0.6rem;
+  border-radius: var(--radio);
+}
+
+/* ===============================
+   FOOTER
+==================================*/
+footer {
+  background: var(--color-primario);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* ===============================
+   RESPONSIVO
+==================================*/
+@media (max-width: 600px) {
+  #ruta-form {
+    width: 100%;
+  }
+
+  #rutas-container ul {
+    grid-template-columns: 1fr;
+  }
+
+  #lista-favoritas {
+    flex-direction: column;
+  }
+}

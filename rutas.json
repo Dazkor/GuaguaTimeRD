@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "origen": "Distrito Nacional",
+    "destino": "Santiago",
+    "tipo": "guagua",
+    "tramos": [
+      { "desde": "Distrito Nacional", "hasta": "Santiago", "tiempo_min": 150, "costo": 400 }
+    ]
+  },
+  {
+    "id": 2,
+    "origen": "La Vega",
+    "destino": "San Cristóbal",
+    "tipo": "guagua",
+    "tramos": [
+      { "desde": "La Vega", "hasta": "San Cristóbal", "tiempo_min": 105, "costo": 300 }
+    ]
+  },
+  {
+    "id": 3,
+    "origen": "Puerto Plata",
+    "destino": "La Romana",
+    "tipo": "guagua",
+    "tramos": [
+      { "desde": "Puerto Plata", "hasta": "La Romana", "tiempo_min": 195, "costo": 500 }
+    ]
+  },
+  {
+    "id": 4,
+    "origen": "San Pedro de Macorís",
+    "destino": "Barahona",
+    "tipo": "guagua",
+    "tramos": [
+      { "desde": "San Pedro de Macorís", "hasta": "Barahona", "tiempo_min": 240, "costo": 550 }
+    ]
+  },
+  {
+    "id": 5,
+    "origen": "Monte Plata",
+    "destino": "Azua",
+    "tipo": "guagua",
+    "tramos": [
+      { "desde": "Monte Plata", "hasta": "Azua", "tiempo_min": 130, "costo": 350 }
+    ]
+  },
+  {
+    "id": 6,
+    "origen": "Hato Mayor",
+    "destino": "Bonao",
+    "tipo": "guagua",
+    "tramos": [
+      { "desde": "Hato Mayor", "hasta": "Bonao", "tiempo_min": 90, "costo": 280 }
+    ]
+  },
+  {
+    "id": 7,
+    "origen": "El Seibo",
+    "destino": "Samaná",
+    "tipo": "guagua",
+    "tramos": [
+      { "desde": "El Seibo", "hasta": "Samaná", "tiempo_min": 140, "costo": 400 }
+    ]
+  },
+  {
+    "id": 8,
+    "origen": "Pedernales",
+    "destino": "Dajabón",
+    "tipo": "guagua",
+    "tramos": [
+      { "desde": "Pedernales", "hasta": "Dajabón", "tiempo_min": 300, "costo": 600 }
+    ]
+  }
+]
